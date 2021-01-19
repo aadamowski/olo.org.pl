@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{w2l6:function(t,n,c){"use strict";c.r(n);c("q1tI");var e=c("PqFP"),o=c("qKvR");n.default=function(t){return Object(o.c)(e.a,{location:t.location,title:"Aleksander Adamowski - not found"},Object(o.c)("main",null,Object(o.c)("h1",null,"Page not found"),Object(o.c)("p",null,"Please check that the URL you got is correct.")))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-f45167262c041103effe.js.map
