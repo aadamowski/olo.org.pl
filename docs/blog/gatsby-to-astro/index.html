@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content="Aleksander Adamowski. Professional electronic brain surgeon."><link rel="icon" type="image/x-icon" href="/favicon.ico"><title>Aleksander Adamowski - Migrating from Gatsby 2 to Astro</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><script>
+      (function () {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script></head> <body class="site-container"> <header class="site-header"> <div class="site-header-top"> <div class="site-header-title"> <a href="/">Aleksander Adamowski - Migrating from Gatsby 2 to Astro</a> </div> <div class="site-header-right"> <nav class="site-nav"> <a href="/">About</a> <span class="nav-sep">|</span> <a href="/resume">Resume</a> <span class="nav-sep">|</span> <a href="/notes">Notes</a> <span class="nav-sep">|</span> <a href="/blog">Blog</a> <span class="nav-sep">|</span> <a href="/links">Links</a> </nav> <button class="theme-toggle" aria-label="Toggle dark mode" onclick="
+              const root = document.documentElement;
+              const current = root.getAttribute('data-theme');
+              const next = current === 'dark' ? 'light' : 'dark';
+              root.setAttribute('data-theme', next);
+              localStorage.setItem('theme', next);
+            "> <span class="theme-icons"> <span aria-hidden="true">🌙</span> <span aria-hidden="true">☀️</span> </span> <span class="theme-knob"></span> </button> </div> </div> <div class="site-bio"> <img src="/assets/avatar.jpg" alt="Aleksander Adamowski" class="site-avatar"> <div class="site-bio-text"> <a href="https://facebook.com/olo" target="_blank" rel="noopener">Aleksander Adamowski</a>'s page.
+<br>
+Just some ramblings.
+</div> </div> </header> <main class="site-main">  <link rel="stylesheet" href="/styles/global.css"> <article> <h1>Migrating from Gatsby 2 to Astro</h1> <span class="post-date"> July 6, 2026 </span> <hr> <p>This site was originally built on <a href="https://www.gatsbyjs.com">Gatsby 2</a> with
+<a href="https://theme-ui.com">theme-ui</a>, and it served me well for years. But the
+ecosystem moved on, and maintaining a Gatsby 2 stack became less pleasant:
+slower builds, heavier runtime, and a lot of complexity for a mostly static
+site.</p>
+<p>So this weekend I (well, mostly my AI agent) migrated the whole thing to
+<a href="https://astro.build">Astro</a>.</p>
+<p>High-level summary of what changed:</p>
+<ul>
+<li>Static-site core:
+<ul>
+<li>Astro handles the same role Gatsby did: generating static HTML from
+templates and content, but with a simpler, more direct model and faster
+builds.</li>
+</ul>
+</li>
+<li>Content:
+<ul>
+<li>Markdown posts and notes are now managed via Astro Content Collections
+with Zod-based schemas, instead of Gatsby’s GraphQL layer.</li>
+<li>This removes the need for graphql queries everywhere and makes the
+content pipeline easier to reason about.</li>
+</ul>
+</li>
+<li>UI layer:
+<ul>
+<li>Replaced theme-ui with plain CSS variables. The visual design is
+preserved, but without the extra abstraction.</li>
+<li>Interactive bits (like the dynamic “years since” on my <a href="/resume" class="ext-link"> resume </a>) are handled by small React islands via @astrojs/react, instead of full-page hydration.</li>
+</ul>
+</li>
+<li>Routing:
+<ul>
+<li>Astro’s file-based routing replaced Gatsby’s pages directory and
+createPages. Dynamic routes (blog posts, notes) are generated via
+getStaticPaths.</li>
+</ul>
+</li>
+</ul>
+<p>AI agent stack used:</p>
+<ul>
+<li>Local <a href="https://github.com/turbo-tan/llama.cpp-tq3"><code>llama.cpp-tq3</code></a> running
+on nVidia GeForce RTX 4090 (when possible, I run AI inference at home - no
+paying for tokens, only electricity!)</li>
+<li><a href="https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF"><code>Qwen3.6-27B-NEO-CODE-HERE-2T-OT-Q4_K_M.gguf</code></a>
+model quant with its corresponding <code>mmproj-BF16.gguf</code> for machine vision,
+running with 196608 context size</li>
+<li><a href="https://github.com/nousresearch/hermes-agent">Hermes-agent</a> harness</li>
+</ul>
+<p>The result:</p>
+<ul>
+<li>Same content, same look and feel.</li>
+<li>No more GraphQL.</li>
+<li>Faster builds, smaller JS footprint, and a modern 2026 stack</li>
+</ul>
+<p>If you are reading this and nothing looks broken, the migration worked.</p> </article>  </main> <footer class="site-footer"> <p> <a href="https://github.com/aadamowski" target="_blank" rel="noopener">GitHub</a>
+&middot;
+<a href="https://www.linkedin.com/in/aleksanderadamowski/" target="_blank" rel="noopener">LinkedIn</a>
+&middot;
+<a href="https://www.facebook.com/olo" target="_blank" rel="noopener">Facebook</a>
+&middot;
+<a href="https://www.instagram.com/aadamowski/" target="_blank" rel="noopener">Instagram</a> </p> </footer> </body></html>
