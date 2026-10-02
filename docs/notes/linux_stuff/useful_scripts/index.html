@@ -1,20 +1,18 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content="Aleksander Adamowski. Professional electronic brain surgeon."><link rel="icon" type="image/x-icon" href="/favicon.ico"><title>Aleksander Adamowski - Useful Scripts</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><script>
+<!DOCTYPE html><html lang="en" data-astro-cid-z4jru4n3><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content="Aleksander Adamowski. Professional electronic brain surgeon."><link rel="icon" type="image/x-icon" href="/favicon.ico"><title>Aleksander Adamowski - Useful Scripts</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/styles/global.css"><script>
       (function () {
         const stored = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const theme = stored || (prefersDark ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
       })();
-    </script></head> <body class="site-container"> <header class="site-header"> <div class="site-header-top"> <div class="site-header-title"> <a href="/">Aleksander Adamowski - Useful Scripts</a> </div> <div class="site-header-right"> <nav class="site-nav"> <a href="/">About</a> <span class="nav-sep">|</span> <a href="/resume">Resume</a> <span class="nav-sep">|</span> <a href="/notes">Notes</a> <span class="nav-sep">|</span> <a href="/blog">Blog</a> <span class="nav-sep">|</span> <a href="/links">Links</a> </nav> <button class="theme-toggle" aria-label="Toggle dark mode" onclick="
+    </script><style>:root{--color-bg:#fff;--color-text:#212121}:root[data-theme=dark]{--color-bg:#111;--color-text:#e0e0e0}body{background-color:var(--color-bg);color:var(--color-text)}
+</style></head><body class="site-container" data-astro-cid-z4jru4n3><header class="site-header" data-astro-cid-z4jru4n3><div class="site-header-top" data-astro-cid-z4jru4n3><div class="site-header-title" data-astro-cid-z4jru4n3><a href="/" data-astro-cid-z4jru4n3>Aleksander Adamowski - Useful Scripts</a></div><div class="site-header-right" data-astro-cid-z4jru4n3><nav class="site-nav" data-astro-cid-z4jru4n3><a href="/" data-astro-cid-z4jru4n3>About</a><span class="nav-sep" data-astro-cid-z4jru4n3>|</span><a href="/resume" data-astro-cid-z4jru4n3>Resume</a><span class="nav-sep" data-astro-cid-z4jru4n3>|</span><a href="/notes" data-astro-cid-z4jru4n3>Notes</a><span class="nav-sep" data-astro-cid-z4jru4n3>|</span><a href="/blog" data-astro-cid-z4jru4n3>Blog</a><span class="nav-sep" data-astro-cid-z4jru4n3>|</span><a href="/links" data-astro-cid-z4jru4n3>Links</a></nav><button class="theme-toggle" aria-label="Toggle dark mode" onclick="
               const root = document.documentElement;
               const current = root.getAttribute('data-theme');
               const next = current === 'dark' ? 'light' : 'dark';
               root.setAttribute('data-theme', next);
               localStorage.setItem('theme', next);
-            "> <span class="theme-icons"> <span aria-hidden="true">🌙</span> <span aria-hidden="true">☀️</span> </span> <span class="theme-knob"></span> </button> </div> </div> <div class="site-bio"> <img src="/assets/avatar.jpg" alt="Aleksander Adamowski" class="site-avatar"> <div class="site-bio-text"> <a href="https://facebook.com/olo" target="_blank" rel="noopener">Aleksander Adamowski</a>'s page.
-<br>
-Just some ramblings.
-</div> </div> </header> <main class="site-main">  <link rel="stylesheet" href="/styles/global.css"> <article> <h1>Useful Scripts</h1> <h1 id="posix-systems">POSIX systems</h1>
+            " data-astro-cid-z4jru4n3><span class="theme-icons" data-astro-cid-z4jru4n3><span aria-hidden="true" data-astro-cid-z4jru4n3>🌙</span><span aria-hidden="true" data-astro-cid-z4jru4n3>☀️</span></span><span class="theme-knob" data-astro-cid-z4jru4n3></span></button></div></div><div class="site-bio" data-astro-cid-z4jru4n3><img src="/assets/avatar.jpg" alt="Aleksander Adamowski" class="site-avatar" data-astro-cid-z4jru4n3><div class="site-bio-text" data-astro-cid-z4jru4n3><a href="https://facebook.com/olo" target="_blank" rel="noopener" data-astro-cid-z4jru4n3>Aleksander Adamowski</a>'s page.<br data-astro-cid-z4jru4n3>Just some ramblings.</div></div></header><main class="site-main" data-astro-cid-z4jru4n3><article><h1>Useful Scripts</h1><h1 id="posix-systems">POSIX systems</h1>
 <p>Scripts in bourne shell/bash, Python, Perl etc.</p>
 <p>Obviously, some may work on non-POSIX systems but it’s not guaranteed.</p>
 <h2 id="bash-aliases">Bash aliases</h2>
@@ -25,30 +23,24 @@ Just some ramblings.
 <span class="line"><span>alias mkdir_cd_curdate_time=&#39;mkdir -p $(date +%F)/$(date +%H_%M_%S); cd $_&#39;</span></span>
 <span class="line"><span>alias cd_curdate_time=&#39;cd $(date +%F)&#39;</span></span>
 <span class="line"><span>alias mkdir_curtimestamp=&#39;mkdir $(date +%F_%H_%M_%S)&#39;</span></span>
-<span class="line"><span>alias mkdir_cd_curtimestamp=&#39;mkdir $(date +%F_%H_%M_%S); cd $_&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>alias mkdir_cd_curtimestamp=&#39;mkdir $(date +%F_%H_%M_%S); cd $_&#39;</span></span></code></pre>
 <h2 id="no-fork-cat-in-bash">No-fork cat in bash</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>clear IFS= read -rd &#39;&#39; contents &lt; /proc/self/status; echo &quot;$contents&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>clear IFS= read -rd &#39;&#39; contents &lt; /proc/self/status; echo &quot;$contents&quot;</span></span></code></pre>
 <h2 id="epoch-timestamp-to-current-date">Epoch timestamp to current date</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>date -d &quot;@$1&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>date -d &quot;@$1&quot;</span></span></code></pre>
 <h2 id="sshpingsh">sshping.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>while true; do nc -zvw 1 &quot;$1&quot; 22; sleep 0.5; done;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>while true; do nc -zvw 1 &quot;$1&quot; 22; sleep 0.5; done;</span></span></code></pre>
 <h2 id="exposing-shells-on-the-network">Exposing shells on the network</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>socat tcp-l:3333 exec:/bin/sh  &lt;-- on the remote side</span></span>
 <span class="line"><span>socat tcp:localhost:3333 stdout</span></span>
-<span class="line"><span>ncat bmcaddr 3333</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>ncat bmcaddr 3333</span></span></code></pre>
 <p>With full tty features:</p>
 <p><a href="https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/#method2usingsocat">https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/#method2usingsocat</a></p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>socat exec:&#39;bash -li&#39;,pty,stderr,setsid,sigint,sane tcp6-l:1337</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>socat file:tty,raw,echo=0 tcp6-connect:&lt;remoteaddr&gt;:1337</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>socat file:tty,raw,echo=0 tcp6-connect:&lt;remoteaddr&gt;:1337</span></span></code></pre>
 <h2 id="openssl">OpenSSL</h2>
 <h3 id="ssl_check_expiry_datesh">ssl_check_expiry_date.sh</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
@@ -61,8 +53,7 @@ Just some ramblings.
 <span class="line"><span>/^notAfter=(.*)/;</span></span>
 <span class="line"><span>print strftime(&quot;%F&quot;, Date::Parse::strptime($1));</span></span>
 <span class="line"><span>print &quot;\n&quot;;</span></span>
-<span class="line"><span>&#39;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>&#39;;</span></span></code></pre>
 <h3 id="tls_smtp_check_expiry_datesh">tls_smtp_check_expiry_date.sh</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>echo &quot;&quot; | openssl s_client -starttls smtp -connect &quot;$1:25&quot; 2&gt;/dev/null | \</span></span>
@@ -74,8 +65,7 @@ Just some ramblings.
 <span class="line"><span>/^notAfter=(.*)/;</span></span>
 <span class="line"><span>print strftime(&quot;%F&quot;, Date::Parse::strptime($1));</span></span>
 <span class="line"><span>print &quot;\n&quot;;</span></span>
-<span class="line"><span>&#39;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>&#39;;</span></span></code></pre>
 <h3 id="ssl_warn_expiry_datesh">ssl_warn_expiry_date.sh</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>host=&quot;$1&quot;</span></span>
@@ -92,24 +82,19 @@ Just some ramblings.
 <span class="line"><span>        print &#39;Only &#39;.(\$timediff /3600/24).&#39; days left until SSL certificate expiry on $host&#39;;</span></span>
 <span class="line"><span>        print \&quot;\n\&quot;;</span></span>
 <span class="line"><span>}</span></span>
-<span class="line"><span>&quot;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>&quot;;</span></span></code></pre>
 <h3 id="use-s_client-with-sni">Use s_client with SNI</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>openssl s_client -connect host:port -servername fqdn</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>openssl s_client -connect host:port -servername fqdn</span></span></code></pre>
 <h3 id="verify_aster_efakturash">verify_aster_eFaktura.sh</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>openssl smime -verify -inform DER -noverify -out /dev/null -in &quot;$1.sig&quot; -content &quot;$1&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>openssl smime -verify -inform DER -noverify -out /dev/null -in &quot;$1.sig&quot; -content &quot;$1&quot;</span></span></code></pre>
 <h3 id="convert-x509-certificate-to-csr">Convert x.509 certificate to CSR</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>openssl x509 -x509toreq -in CERT.pem -signkey PRIVKEY.pem</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>openssl x509 -x509toreq -in CERT.pem -signkey PRIVKEY.pem</span></span></code></pre>
 <h3 id="reflow_pempl">reflow_PEM.pl</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -p</span></span>
 <span class="line"><span>s/(-----BEGIN[^-]+-----)/$1\n/g;</span></span>
 <span class="line"><span>s/(-----END[^-]+-----)/\n$1/g;</span></span>
-<span class="line"><span>s/([^\n]{64})/$1\n/g&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>s/([^\n]{64})/$1\n/g&#39;</span></span></code></pre>
 <p>^ That’s for the cases wher PEM-encoded data got all its linebreaks removed and e.g. openssl tools refuse to parse it with</p>
 <h3 id="ssl-redirectpl">ssl-redirect.pl</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -wT</span></span>
@@ -142,11 +127,9 @@ Just some ramblings.
 <span class="line"><span>    &lt;h1&gt;Dostęp zabroniony&lt;/h1&gt;</span></span>
 <span class="line"><span>    &lt;P&gt;Ta strona wymaga połączenia szyfrowanego SSL.</span></span>
 <span class="line"><span>EOD</span></span>
-<span class="line"><span>      print &#39;Oto poprawny adres: &lt;A HREF=&quot;&#39;.$redirect.&#39;&quot;&gt;&#39;.$redirect.&#39;&lt;/A&gt;. Powinno pod niego za chwilę nastąpić przekierowanie.&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;&#39;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>      print &#39;Oto poprawny adres: &lt;A HREF=&quot;&#39;.$redirect.&#39;&quot;&gt;&#39;.$redirect.&#39;&lt;/A&gt;. Powinno pod niego za chwilę nastąpić przekierowanie.&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;&#39;;</span></span></code></pre>
 <h3 id="ssl_clientsh">ssl_client.sh</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>openssl s_client -CApath /etc/ssl/cacerts/ -connect $@</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>openssl s_client -CApath /etc/ssl/cacerts/ -connect $@</span></span></code></pre>
 <h3 id="tls_smtp_clientsh">tls_smtp_client.sh</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>if [ $# -eq 1 ]; then</span></span>
 <span class="line"><span>  openssl s_client -starttls smtp -connect $@</span></span>
@@ -154,24 +137,19 @@ Just some ramblings.
 <span class="line"><span>  echo &quot;Uzycie: $0 host:port&quot;</span></span>
 <span class="line"><span>  echo &quot;n.p.:&quot;</span></span>
 <span class="line"><span>  echo &quot;$0 nmail.altkom.pl:25&quot;</span></span>
-<span class="line"><span>fi</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>fi</span></span></code></pre>
 <h2 id="openssl_cat_pkcs12">openssl_cat_PKCS12</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>openssl pkcs12 -info -nodes -in &quot;$1&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>openssl pkcs12 -info -nodes -in &quot;$1&quot;</span></span></code></pre>
 <h2 id="hexdump2asn1parsesh">hexdump2asn1parse.sh</h2>
 <p>Read and parse a hexdump of DER-encoded ASN.1 structure:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>xxd -r -p &lt; $1 | openssl asn1parse -inform DER</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>xxd -r -p &lt; $1 | openssl asn1parse -inform DER</span></span></code></pre>
 <h2 id="git">GIT</h2>
 <h3 id="git-relative-diff-alias">Git relative diff alias</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>git config --global alias.d &#39;diff --no-prefix --relative&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>git config --global alias.d &#39;diff --no-prefix --relative&#39;</span></span></code></pre>
 <h3 id="list-branches-and-remote-upstreams-they-track">List branches and remote upstreams they track</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>git for-each-ref refs/heads --format=&#39;%(refname:short) %(upstream:short)&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>git for-each-ref refs/heads --format=&#39;%(refname:short) %(upstream:short)&#39;</span></span></code></pre>
 <h3 id="sum-blob-sizes-introduced-by-commit">Sum blob sizes introduced by commit</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>commitid=$1</span></span>
@@ -187,58 +165,48 @@ Just some ramblings.
 <span class="line"><span>}</span></span>
 <span class="line"><span> END {</span></span>
 <span class="line"><span>        print &quot;Summary size of blobs introduced by commit &quot; commitid &quot;: &quot; s &quot; bytes&quot;</span></span>
-<span class="line"><span>}&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}&#39;</span></span></code></pre>
 <h3 id="sort-branches-by-last-commit-timestamp">Sort branches by last commit timestamp</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>git for-each-ref --sort=-committerdate refs/</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>git for-each-ref --sort=-committerdate refs/</span></span></code></pre>
 <h2 id="mercurial">Mercurial</h2>
 <h3 id="hg_log_raw_messagessh">hg_log_raw_messages.sh</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>hg log --template &#39;{desc}\n--------\n&#39; &quot;$@&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>hg log --template &#39;{desc}\n--------\n&#39; &quot;$@&quot;</span></span></code></pre>
 <h3 id="hgd">hgd</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>alias hgd=&#39;hg diff --noprefix --root . --color always | less -r&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>alias hgd=&#39;hg diff --noprefix --root . --color always | less -r&#39;</span></span></code></pre>
 <h2 id="base64_decpy">base64_dec.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>import sys</span></span>
 <span class="line"><span>for line in sys.stdin.readlines():</span></span>
-<span class="line"><span>        print line.decode(&#39;base64&#39;)</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print line.decode(&#39;base64&#39;)</span></span></code></pre>
 <h2 id="base64_encpy">base64_enc.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>import sys</span></span>
 <span class="line"><span>for line in sys.stdin.readlines():</span></span>
-<span class="line"><span>        print line.encode(&#39;base64&#39;)</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print line.encode(&#39;base64&#39;)</span></span></code></pre>
 <h2 id="base64_dec">base64_dec</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span>use MIME::Base64 ();</span></span>
 <span class="line"><span>while (&lt;&gt;) { $buf.=$_};</span></span>
-<span class="line"><span>print MIME::Base64::decode($buf);</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print MIME::Base64::decode($buf);</span></span></code></pre>
 <h2 id="base64_enc">base64_enc</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span>use MIME::Base64 ();</span></span>
 <span class="line"><span>while (read(STDIN, $buf, 60*57)) {</span></span>
 <span class="line"><span>  print MIME::Base64::encode($buf);</span></span>
-<span class="line"><span>};</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>};</span></span></code></pre>
 <h2 id="quoted_printable_dec">quoted_printable_dec</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span>use MIME::QuotedPrint;</span></span>
 <span class="line"><span>while (&lt;&gt;) { $buf.=$_};</span></span>
-<span class="line"><span>print decode_qp($buf);</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print decode_qp($buf);</span></span></code></pre>
 <h2 id="quoted_printable_enc">quoted_printable_enc</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span>use MIME::QuotedPrint;</span></span>
 <span class="line"><span>while (read(STDIN, $buf, 60*57)) {</span></span>
 <span class="line"><span>  print encode_qp($buf);</span></span>
-<span class="line"><span>};</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>};</span></span></code></pre>
 <h2 id="all_pair_combinationspy">all_pair_combinations.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import sys</span></span>
@@ -247,12 +215,10 @@ Just some ramblings.
 <span class="line"><span>combinations=itertools.combinations(words, 2)</span></span>
 <span class="line"><span>for combination in combinations:</span></span>
 <span class="line"><span>        print combination[0].rstrip() + &#39; &#39; + combination[1].rstrip()</span></span>
-<span class="line"><span>        print combination[1].rstrip() + &#39; &#39; + combination[0].rstrip()</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print combination[1].rstrip() + &#39; &#39; + combination[0].rstrip()</span></span></code></pre>
 <h2 id="dusage_in_curdirsh">dusage_in_curdir.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>du -xk --max-depth=1 . | sort -n</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>du -xk --max-depth=1 . | sort -n</span></span></code></pre>
 <h2 id="db_dumppl---dump-a-berkeley-db-database">db_dump.pl - dump a Berkeley DB database</h2>
 <p> </p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>use warnings;</span></span>
@@ -266,8 +232,7 @@ Just some ramblings.
 <span class="line"><span>while (($key, $val) = each %db) {</span></span>
 <span class="line"><span>	    print &quot;$key:$val\n&quot;;</span></span>
 <span class="line"><span>}</span></span>
-<span class="line"><span>untie %db;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>untie %db;</span></span></code></pre>
 <h2 id="bekap">bekap</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># by OLO</span></span>
@@ -289,8 +254,7 @@ Just some ramblings.
 <span class="line"><span>	    done</span></span>
 <span class="line"><span>else</span></span>
 <span class="line"><span>	    echo &quot;Uzycie: $0 plik_do_zachowania&quot;</span></span>
-<span class="line"><span>fi</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>fi</span></span></code></pre>
 <h2 id="bekap_in_place">bekap_in_place</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># by OLO</span></span>
@@ -312,12 +276,10 @@ Just some ramblings.
 <span class="line"><span>	    done</span></span>
 <span class="line"><span>else</span></span>
 <span class="line"><span>	    echo &quot;Uzycie: $0 plik_do_zachowania&quot;</span></span>
-<span class="line"><span>fi</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>fi</span></span></code></pre>
 <h2 id="httrack-mirror_websitesh">httrack-mirror_website.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>httrack &quot;$@&quot; -j -%P -w -n -b1 -%h -%k -%B -C1 -P stacja.amarczuk:8080</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>httrack &quot;$@&quot; -j -%P -w -n -b1 -%h -%k -%B -C1 -P stacja.amarczuk:8080</span></span></code></pre>
 <h2 id="check_nippy">check_nip.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import sys</span></span>
@@ -332,8 +294,7 @@ Just some ramblings.
 <span class="line"><span>if check_nip(line):</span></span>
 <span class="line"><span>        print &quot;NIP poprawny&quot;</span></span>
 <span class="line"><span>else:</span></span>
-<span class="line"><span>        print &quot;NIP NIEPOPRAWNY!&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print &quot;NIP NIEPOPRAWNY!&quot;</span></span></code></pre>
 <h2 id="generate_nippy">generate_nip.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import random</span></span>
@@ -347,12 +308,10 @@ Just some ramblings.
 <span class="line"><span>  sum += (digit * ct[i])</span></span>
 <span class="line"><span>checkDigit = sum % 11</span></span>
 <span class="line"><span>nip.append(`checkDigit`)</span></span>
-<span class="line"><span>print &#39;&#39;.join(nip)</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print &#39;&#39;.join(nip)</span></span></code></pre>
 <h2 id="check_nrbpy">check_nrb.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
-<span class="line"><span>import sys</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>import sys</span></span></code></pre>
 <p> </p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>def iban_letter2num(letter):</span></span>
 <span class="line"><span>        return str(ord(letter) - ord(&#39;A&#39;) + 10)</span></span>
@@ -369,8 +328,7 @@ Just some ramblings.
 <span class="line"><span>        if n % 97 == 1:</span></span>
 <span class="line"><span>                print &quot;ok&quot;</span></span>
 <span class="line"><span>        else:</span></span>
-<span class="line"><span>                print &quot;zla suma kontrolna&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>                print &quot;zla suma kontrolna&quot;</span></span></code></pre>
 <h2 id="check_peselpy">check_pesel.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import sys</span></span>
@@ -385,8 +343,7 @@ Just some ramblings.
 <span class="line"><span>if check_pesel(line):</span></span>
 <span class="line"><span>        print &quot;PESEL poprawny&quot;</span></span>
 <span class="line"><span>else:</span></span>
-<span class="line"><span>        print &quot;PESEL NIEPOPRAWNY!&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print &quot;PESEL NIEPOPRAWNY!&quot;</span></span></code></pre>
 <h2 id="generate_peselpy">generate_pesel.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import random</span></span>
@@ -407,8 +364,7 @@ Just some ramblings.
 <span class="line"><span>        return mainpart + (&quot;%1d&quot; % controlcode) + &quot; , sexdigit: &quot; + sexdigit + \</span></span>
 <span class="line"><span>                (&quot; (kobieta)&quot; if int(sexdigit) % 2 == 0 else &quot; (mezczyzna)&quot;)</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>print gen_pesel()</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print gen_pesel()</span></span></code></pre>
 <h2 id="check_regonpy">check_regon.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import sys</span></span>
@@ -436,8 +392,7 @@ Just some ramblings.
 <span class="line"><span>if check_regon(line):</span></span>
 <span class="line"><span>  print &quot;REGON poprawny&quot;</span></span>
 <span class="line"><span>else:</span></span>
-<span class="line"><span>  print &quot;REGON NIEPOPRAWNY!&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>  print &quot;REGON NIEPOPRAWNY!&quot;</span></span></code></pre>
 <h2 id="luhncalculatorpy">luhnCalculator.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span># From http://www.xinotes.org/notes/note/596/</span></span>
@@ -471,8 +426,7 @@ Just some ramblings.
 <span class="line"><span>	if re.match(&quot;^[0-9]{9,}$&quot;, number):</span></span>
 <span class="line"><span>	    print number + &quot;: &quot; + str(generateCheckDigit(number))</span></span>
 <span class="line"><span>	else:</span></span>
-<span class="line"><span>	    print number</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>	    print number</span></span></code></pre>
 <h2 id="luhncheckpy">luhnCheck.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span># From http://en.wikipedia.org/wiki/Luhn_algorithm</span></span>
@@ -500,8 +454,7 @@ Just some ramblings.
 <span class="line"><span>	if re.match(&quot;^[0-9]{9,}$&quot;, number):</span></span>
 <span class="line"><span>	    print number + &quot;: &quot; + str(check_number(number));</span></span>
 <span class="line"><span>	else:</span></span>
-<span class="line"><span>	    print number</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>	    print number</span></span></code></pre>
 <h2 id="chrome_bookmarks-extract_urlspy">chrome_bookmarks-extract_URLs.py</h2>
 <p>Extracts URLs of all Chrome bookmarks in the specified bookmark folder (or many folders, if they collide by name). Works recursively.</p>
 <p>It’s also a nice example for general JSON parsing and querying (XPath-like) using Python.</p>
@@ -517,27 +470,23 @@ Just some ramblings.
 <span class="line"><span>term_urls = jsonpath.jsonpath(bookmarks, &quot;$..children[?(@.name=\&quot;SomeBookmarkFolder\&quot;)]..url&quot;)</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>for url in term_urls:</span></span>
-<span class="line"><span>        print url</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print url</span></span></code></pre>
 <h2 id="url_encodepl">url_encode.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w -p</span></span>
-<span class="line"><span>s/([^A-Za-z0-9])/sprintf(&quot;%%%02X&quot;, ord($1))/seg;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>s/([^A-Za-z0-9])/sprintf(&quot;%%%02X&quot;, ord($1))/seg;</span></span></code></pre>
 <h2 id="url_decodepl">url_decode.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span>$str=&lt;&gt;;</span></span>
 <span class="line"><span>$str =~ s/\%([A-Fa-f0-9]{2})/pack(&#39;C&#39;, hex($1))/seg;</span></span>
 <span class="line"><span>print $str;</span></span>
-<span class="line"><span>print &quot;\n&quot;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print &quot;\n&quot;;</span></span></code></pre>
 <h2 id="html_escape_with_entitiespl">html_escape_with_entities.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w -p</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>BEGIN { use HTML::Entities; }</span></span>
 <span class="line"><span>{</span></span>
 <span class="line"><span> $_ = encode_entities($_, &#39;&lt;&gt;&amp;&quot;&#39;);</span></span>
-<span class="line"><span>}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}</span></span></code></pre>
 <h2 id="ldap_ssha_makepy">ldap_ssha_make.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import hashlib</span></span>
@@ -555,8 +504,7 @@ Just some ramblings.
 <span class="line"><span>print &quot;Input password: &quot;</span></span>
 <span class="line"><span>password = sys.stdin.readline().rstrip()</span></span>
 <span class="line"><span>print &quot;Hashed:&quot;</span></span>
-<span class="line"><span>print makeSecret(password)</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print makeSecret(password)</span></span></code></pre>
 <h2 id="ldap_ssha_checkpy">ldap_ssha_check.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/python</span></span>
 <span class="line"><span>import hashlib</span></span>
@@ -579,19 +527,16 @@ Just some ramblings.
 <span class="line"><span>        print &quot;Input password: &quot;</span></span>
 <span class="line"><span>        password = sys.stdin.readline().rstrip()</span></span>
 <span class="line"><span>        print pass_hash+&quot; &quot;+password</span></span>
-<span class="line"><span>        print &quot;Check result: &quot;+str(checkPassword(pass_hash, password))</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>        print &quot;Check result: &quot;+str(checkPassword(pass_hash, password))</span></span></code></pre>
 <h2 id="generate_passwords_no_ambiguous_charssh">generate_passwords_no_ambiguous_chars.sh</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>apg -M SNCL -E &quot;O5Ss01Il:;|6b&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>apg -M SNCL -E &quot;O5Ss01Il:;|6b&quot;</span></span></code></pre>
 <h2 id="soap_digest_checksh">soap_digest_check.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>nonceb64=$1</span></span>
 <span class="line"><span>created=$2</span></span>
 <span class="line"><span>pass=$3</span></span>
-<span class="line"><span>(echo -n &quot;$nonceb64&quot; | base64 -d ; echo -n &quot;$created&quot;; echo -n &quot;$pass&quot;) | sha1sum -b | awk &#39;{print $1}&#39; | xxd -c 40 -p -r | base64</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>(echo -n &quot;$nonceb64&quot; | base64 -d ; echo -n &quot;$created&quot;; echo -n &quot;$pass&quot;) | sha1sum -b | awk &#39;{print $1}&#39; | xxd -c 40 -p -r | base64</span></span></code></pre>
 <h2 id="rename_to_randomsh">rename_to_random.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span></span></span>
@@ -610,8 +555,7 @@ Just some ramblings.
 <span class="line"><span>        done</span></span>
 <span class="line"><span>else</span></span>
 <span class="line"><span>        echo &quot;Uzycie: $0 pliki_lub_katalogi_do_przemianowania&quot;</span></span>
-<span class="line"><span>fi</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>fi</span></span></code></pre>
 <h2 id="rename_files_for_windows_fastpl">rename_files_for_windows_fast.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/bash</span></span>
 <span class="line"><span></span></span>
@@ -635,8 +579,7 @@ Just some ramblings.
 <span class="line"><span>    }</span></span>
 <span class="line"><span>  }</span></span>
 <span class="line"><span>}</span></span>
-<span class="line"><span>&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>&quot;</span></span></code></pre>
 <h2 id="rename_files_perl_expressionpl">rename_files_perl_expression.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span># by OLO</span></span>
@@ -711,25 +654,20 @@ Just some ramblings.
 <span class="line"><span>    rename $pathname, $new_pathname;</span></span>
 <span class="line"><span>  }</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}</span></span></code></pre>
 <h2 id="remove_newline_at_eofpl">remove_newline_at_eof.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -i -p</span></span>
-<span class="line"><span>chomp if eof</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>chomp if eof</span></span></code></pre>
 <p>Or directly from the shelll:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>perl -i -pe &#39;chomp if eof&#39; &lt;filename&gt;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>perl -i -pe &#39;chomp if eof&#39; &lt;filename&gt;</span></span></code></pre>
 <h2 id="reread_partition_table_blockdevsh">reread_partition_table_blockdev.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>blockdev --rereadpt &quot;$1&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>blockdev --rereadpt &quot;$1&quot;</span></span></code></pre>
 <h2 id="scsi_rescan_bussh">scsi_rescan_bus.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>host_number=&quot;$1&quot;</span></span>
 <span class="line"><span>echo &quot;1&quot; &gt; /sys/class/fc_host/host${host_number}/issue_lip</span></span>
-<span class="line"><span>echo &quot;- - -&quot; &gt; /sys/class/scsi_host/host${host_number}/scan</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>echo &quot;- - -&quot; &gt; /sys/class/scsi_host/host${host_number}/scan</span></span></code></pre>
 <h2 id="epoch2timepl">epoch2time.pl</h2>
 <p>Convert UNIX epoch to human readable time:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w</span></span>
@@ -745,42 +683,33 @@ Just some ramblings.
 <span class="line"><span></span></span>
 <span class="line"><span>my $localestrtime = localtime($time);</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>print &quot;In locale format: $localestrtime\n&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print &quot;In locale format: $localestrtime\n&quot;</span></span></code></pre>
 <h2 id="epoch2timesh">epoch2time.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>date -d &quot;@${1}&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>date -d &quot;@${1}&quot;</span></span></code></pre>
 <h2 id="epoch2time_bsdsh">epoch2time_bsd.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>date -j -f %s &quot;${1}&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>date -j -f %s &quot;${1}&quot;</span></span></code></pre>
 <h2 id="primessh">primes.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>(for int in `seq 1024`; do factor $int; done;) | grep &#39;^[0-9]\+: [0-9]\+$&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>(for int in `seq 1024`; do factor $int; done;) | grep &#39;^[0-9]\+: [0-9]\+$&#39;</span></span></code></pre>
 <h2 id="mplayer_play_dvd_iso_image_with_subssh">mplayer_play_DVD_iso_image_with_subs.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>mplayer -sub $1 -subcp $2 -dvd-device $3 dvd://1</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>mplayer -sub $1 -subcp $2 -dvd-device $3 dvd://1</span></span></code></pre>
 <h2 id="keytool_add_ca_certsh">keytool_add_ca_cert.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># default keystore pass: &quot;changeit&quot;</span></span>
-<span class="line"><span>keytool -import -keystore /etc/java-1.5.0-sun/security/cacerts -trustcacerts -alias FIRMA -file PATH/TO/firma.pem</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>keytool -import -keystore /etc/java-1.5.0-sun/security/cacerts -trustcacerts -alias FIRMA -file PATH/TO/firma.pem</span></span></code></pre>
 <h2 id="list-pkcs11-keystore">list PKCS#11 KeyStore</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>keytool -v -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunPKCS11   -providerArg /.../pkcs11.cfg -list</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>keytool -v -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunPKCS11   -providerArg /.../pkcs11.cfg -list</span></span></code></pre>
 <h2 id="list-pkcs12-keystore">list PKCS#12 KeyStore</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>keytool -v -keystore STORE.p12 -storetype PKCS12 -list</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>keytool -v -keystore STORE.p12 -storetype PKCS12 -list</span></span></code></pre>
 <h2 id="import-pkcs12-to-jks-keystore">Import PKCS#12 to JKS KeyStore</h2>
 <p>keytool -importkeystore -srckeystore SRC.p12 -destkeystore DEST.jks -srcstoretype PKCS12 -deststoretype JKS -srcstorepass PASS1 -deststorepass PASS2</p>
 <h2 id="python_compilesh">python_compile.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>(echo &quot;import py_compile&quot;; echo &quot;py_compile.compile(\&quot;$1\&quot;)&quot;) | python</span></span>
-<span class="line"><span>(echo &quot;import py_compile&quot;; echo &quot;py_compile.compile(\&quot;$1\&quot;)&quot;) | python -O</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>(echo &quot;import py_compile&quot;; echo &quot;py_compile.compile(\&quot;$1\&quot;)&quot;) | python -O</span></span></code></pre>
 <h2 id="terroristizelisp">terroristize.lisp</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>;This maker of food for the NSA Line Eater is copyright (C) Eli Gottlieb, December 26 2005.</span></span>
 <span class="line"><span>;It&#39;s under the GNU General Public License version 2.0.</span></span>
@@ -854,8 +783,7 @@ Just some ramblings.
 <span class="line"><span>; by OLO:</span></span>
 <span class="line"><span>; usage:</span></span>
 <span class="line"><span>; $ clisp -repl terroristize.lisp</span></span>
-<span class="line"><span>; $ (feed-echelon &quot;Hello world.&quot;)</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>; $ (feed-echelon &quot;Hello world.&quot;)</span></span></code></pre>
 <h2 id="jpegtran_from_jpegexifsh">jpegtran_from_jpegexif.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>for jpg in &quot;$@&quot;; do</span></span>
@@ -866,8 +794,7 @@ Just some ramblings.
 <span class="line"><span>    jhead -autorot -ft &quot;$jpg&quot;</span></span>
 <span class="line"><span>    #touch -r $randname &quot;$jpg&quot;</span></span>
 <span class="line"><span>    #rm $randname</span></span>
-<span class="line"><span>done;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done;</span></span></code></pre>
 <h2 id="exif_timestamps_to_file_modtime_in_curdirpy">Exif_timestamps_to_file_modtime_in_curdir.py</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/env python</span></span>
 <span class="line"><span></span></span>
@@ -901,8 +828,7 @@ Just some ramblings.
 <span class="line"><span>            print &#39;ERROR when processing file &#39; + filename</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>if __name__ == &#39;__main__&#39;:</span></span>
-<span class="line"><span>    main()</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>    main()</span></span></code></pre>
 <h2 id="input_rate_notifierpl">input_rate_notifier.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w</span></span>
 <span class="line"><span># by Aleksander Adamowski</span></span>
@@ -945,8 +871,7 @@ Just some ramblings.
 <span class="line"><span>      $lastnotification = time;</span></span>
 <span class="line"><span>    }</span></span>
 <span class="line"><span>  }</span></span>
-<span class="line"><span>}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}</span></span></code></pre>
 <h2 id="monitor_logfilepl">monitor_logfile.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w</span></span>
 <span class="line"><span># by OLO</span></span>
@@ -991,8 +916,7 @@ Just some ramblings.
 <span class="line"><span>      exit 0;</span></span>
 <span class="line"><span>    }</span></span>
 <span class="line"><span>        }</span></span>
-<span class="line"><span>}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}</span></span></code></pre>
 <h2 id="exec_timeout_killpl">exec_timeout_kill.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w</span></span>
 <span class="line"><span># by OLO</span></span>
@@ -1060,16 +984,13 @@ Just some ramblings.
 <span class="line"><span></span></span>
 <span class="line"><span>} else {</span></span>
 <span class="line"><span>  print STDERR &quot;Usage:\n$0 -t timeout command [args] \n&quot;;</span></span>
-<span class="line"><span>}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}</span></span></code></pre>
 <h2 id="ettercap_arp_sniffsh">ettercap_arp_sniff.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>ettercap -Tq -M arp //</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>ettercap -Tq -M arp //</span></span></code></pre>
 <h2 id="amr_to_wavsh">amr_to_wav.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>mplayer &quot;$1&quot; -ao pcm:file=&quot;$1.wav&quot; -vc null -vo null</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>mplayer &quot;$1&quot; -ao pcm:file=&quot;$1.wav&quot; -vc null -vo null</span></span></code></pre>
 <h2 id="convert_flac_to_mp3_subtreesh">convert_flac_to_mp3_subtree.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>if [ $# -ge 1 ]; then</span></span>
@@ -1089,21 +1010,18 @@ Just some ramblings.
 <span class="line"><span>done;</span></span>
 <span class="line"><span>else</span></span>
 <span class="line"><span>	    echo &quot;Usage: $0 directory_with_flac_files&quot;</span></span>
-<span class="line"><span>fi</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>fi</span></span></code></pre>
 <h2 id="ffmpeg_transcode_avi_to_androidsh">ffmpeg_transcode_avi_to_Android.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># Using a xargs queue for 4 parallel processes to fully utilise a 4-core CPU:</span></span>
 <span class="line"><span>(for krtekavi in ../*Krtek*.avi; do</span></span>
 <span class="line"><span>        krtekandroid=&quot;$(basename &quot;$krtekavi&quot;).mp4&quot;</span></span>
 <span class="line"><span>        echo &quot; -threads 4 -strict experimental -i $krtekavi -s 480x320 -vcodec mpeg4 -acodec aac -ac 1 -ar 16000 -r 13 -ab 32000 -aspect 3:2 $krtekandroid&quot;</span></span>
-<span class="line"><span>done) | xargs -t -P 4 -L 1 ffmpeg</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done) | xargs -t -P 4 -L 1 ffmpeg</span></span></code></pre>
 <p>  </p>
 <h2 id="ldapsearch_get_suffixessh">ldapsearch_get_suffixes.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>ldapsearch -x -H ldap://127.0.0.1 -b &quot;&quot; -s base &quot;(objectclass=*)&quot; namingContexts</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>ldapsearch -x -H ldap://127.0.0.1 -b &quot;&quot; -s base &quot;(objectclass=*)&quot; namingContexts</span></span></code></pre>
 <p>AD_search_groups.sh</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span></span></span>
@@ -1117,11 +1035,9 @@ Just some ramblings.
 <span class="line"><span>EOF</span></span>
 <span class="line"><span>else</span></span>
 <span class="line"><span>	ldapsearch -LLL -H ldap://your-dc-hostname-from-logonserver-windows-env-var -D &quot;$1&quot; -b DC=example,DC=com -W -x &quot;member=$2&quot; name displayname mail</span></span>
-<span class="line"><span>fi</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>fi</span></span></code></pre>
 <h2 id="iconv_utf8_to_ascii_translit">iconv_utf8_to_ascii_translit</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>iconv -f UTF-8 -t US-ASCII//TRANSLIT</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>iconv -f UTF-8 -t US-ASCII//TRANSLIT</span></span></code></pre>
 <h2 id="wikiconvpl">wikiconv.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w</span></span>
 <span class="line"><span></span></span>
@@ -1175,11 +1091,9 @@ Just some ramblings.
 <span class="line"><span>#print $mediaWikiText;</span></span>
 <span class="line"><span>  print &quot;&lt;/pre&gt;\n&quot;;</span></span>
 <span class="line"><span>}</span></span>
-<span class="line"><span>print $q-&gt;end_html;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print $q-&gt;end_html;</span></span></code></pre>
 <h2 id="wiki_indent">wiki_indent</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>alias wiki_indent=&quot;perl -e &#39;@all=&lt;&gt;; @out= map {\$_ = \&quot; \&quot;.\$_;} @all; print @out; print \&quot;\n\&quot;;&#39;&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>alias wiki_indent=&quot;perl -e &#39;@all=&lt;&gt;; @out= map {\$_ = \&quot; \&quot;.\$_;} @all; print @out; print \&quot;\n\&quot;;&#39;&quot;</span></span></code></pre>
 <h2 id="encode_bcdpl">encode_BCD.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl -w</span></span>
 <span class="line"><span>use strict;</span></span>
@@ -1199,11 +1113,9 @@ Just some ramblings.
 <span class="line"><span>print &quot;grouped binary:\n&quot;;</span></span>
 <span class="line"><span>print &quot;$groupedBin\n&quot;;</span></span>
 <span class="line"><span>print &quot;hexadecimal (the same as decimal):\n&quot;;</span></span>
-<span class="line"><span>print &quot;$decString\n&quot;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print &quot;$decString\n&quot;;</span></span></code></pre>
 <h2 id="jboss_list_jndi">jboss_list_JNDI</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>sh /opt/jboss/bin/twiddle.sh invoke jboss:service=JNDIView list true</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>sh /opt/jboss/bin/twiddle.sh invoke jboss:service=JNDIView list true</span></span></code></pre>
 <p>Listuje zawartość JNDI.</p>
 <h2 id="jboss_scp_deploy_and_waitsh">jboss_scp_deploy_and_wait.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
@@ -1231,8 +1143,7 @@ Just some ramblings.
 <span class="line"><span>	    echo &quot;Deployment of $ear on $host ended.&quot;</span></span>
 <span class="line"><span>	    sleep 1</span></span>
 <span class="line"><span>	done;</span></span>
-<span class="line"><span>done;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done;</span></span></code></pre>
 <h2 id="sizeof_voidc">sizeof_void.c</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#include &lt;stdio.h&gt;</span></span>
 <span class="line"><span>int main(int argc, char *argv[]) {</span></span>
@@ -1250,8 +1161,7 @@ Just some ramblings.
 <span class="line"><span>        return 0;</span></span>
 <span class="line"><span>}</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>gcc -Wall -pedantic -o sizeof_void sizeof_void.c</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>gcc -Wall -pedantic -o sizeof_void sizeof_void.c</span></span></code></pre>
 <p>Na 32-bitowej zobaczysz:</p>
 <p> </p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>=== Pointers: ===</span></span>
@@ -1264,8 +1174,7 @@ Just some ramblings.
 <span class="line"><span>sizeof(char) is 1</span></span>
 <span class="line"><span>sizeof(int) is 4</span></span>
 <span class="line"><span>sizeof(long) is 4</span></span>
-<span class="line"><span>sizeof(long long) is 8</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>sizeof(long long) is 8</span></span></code></pre>
 <p>Na 64-bitowej natomiast:</p>
 <p> </p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>=== Pointers: ===</span></span>
@@ -1278,17 +1187,14 @@ Just some ramblings.
 <span class="line"><span>sizeof(char) is 1</span></span>
 <span class="line"><span>sizeof(int) is 4</span></span>
 <span class="line"><span>sizeof(long) is 8</span></span>
-<span class="line"><span>sizeof(long long) is 8</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>sizeof(long long) is 8</span></span></code></pre>
 <p>Jak widać jedyna różnica jest w rozmiarze long-ów (model <a href="http://en.wikipedia.org/wiki/64-bit#64-bit_data_models">LP64</a>) i wskaźników.</p>
 <h2 id="phl_dump_tokensh">phl_dump_token.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>(echo 6; echo N; echo; echo 99;) |/opt/PSV_linux_client/csv/utils/phl</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>(echo 6; echo N; echo; echo 99;) |/opt/PSV_linux_client/csv/utils/phl</span></span></code></pre>
 <h2 id="phl_object_deletersh">phl_object_deleter.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>(echo 11; echo; echo; echo 35; echo; echo 38; echo; echo; echo 38; echo; echo;exit; ) | /opt/PSV_linux_client/csv/utils/phl</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>(echo 11; echo; echo; echo 35; echo; echo 38; echo; echo; echo 38; echo; echo;exit; ) | /opt/PSV_linux_client/csv/utils/phl</span></span></code></pre>
 <h2 id="explode_zipssh">explode_zips.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># Iteratively explode all ZIP/JAR/WAR/EAR archives in the current dir and all the archives they contain.</span></span>
@@ -1321,16 +1227,14 @@ Just some ramblings.
 <span class="line"><span>	fi;</span></span>
 <span class="line"><span>	finish=0</span></span>
 <span class="line"><span>  done;</span></span>
-<span class="line"><span>done;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done;</span></span></code></pre>
 <h2 id="rename_jpg_based_on_exif_timestampsh">rename_jpg_based_on_exif_timestamp.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>for jpg in *.jpg; do</span></span>
 <span class="line"><span>	    tag=&quot;$(exif -m -t 0x9003 &quot;$jpg&quot; | perl -pe &#39;tr/: /-_/;&#39;)&quot;</span></span>
 <span class="line"><span>	    mv -i &quot;Renaming [$jpg] to [$tag.jpg]&quot;</span></span>
 <span class="line"><span>	    mv -i &quot;$jpg&quot; &quot;$tag.jpg&quot;</span></span>
-<span class="line"><span>done</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done</span></span></code></pre>
 <h2 id="do_postmark_testssh">do_postmark_tests.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># (c) 2010 Aleksander Adamowski</span></span>
@@ -1396,8 +1300,7 @@ Just some ramblings.
 <span class="line"><span></span></span>
 <span class="line"><span>	echo &quot;Sleeping 5 seconds...&quot;</span></span>
 <span class="line"><span>	sleep 5</span></span>
-<span class="line"><span>done</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done</span></span></code></pre>
 <h2 id="lookup_ip_countrysh">lookup_IP_country.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span># Example usage:</span></span>
@@ -1408,8 +1311,7 @@ Just some ramblings.
 <span class="line"><span>ip_addr=$1</span></span>
 <span class="line"><span>rev_ip_addr=&quot;$(echo &quot;$ip_addr&quot; | perl -pe &#39;s/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$/$4.$3.$2.$1/;&#39;)&quot;</span></span>
 <span class="line"><span># 227.73.63.60.cc.iploc.org descriptive text &quot;CN&quot;</span></span>
-<span class="line"><span>host -t TXT &quot;${rev_ip_addr}.cc.iploc.org&quot; | perl -pe &#39;s/^[0-9.]+\.cc\.iploc\.org descriptive text \&quot;([A-Za-z0-9]+)\&quot;$/$1/;&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>host -t TXT &quot;${rev_ip_addr}.cc.iploc.org&quot; | perl -pe &#39;s/^[0-9.]+\.cc\.iploc\.org descriptive text \&quot;([A-Za-z0-9]+)\&quot;$/$1/;&#39;</span></span></code></pre>
 <h2 id="ss_list_listening_socketssh">ss_list_listening_sockets.sh</h2>
 <p>List listening TCP sockets for selected port numbers:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/bash</span></span>
@@ -1429,8 +1331,7 @@ Just some ramblings.
 <span class="line"><span></span></span>
 <span class="line"><span>echo &quot;FILTER: $filter&quot;</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>ss -tlnup &quot;$filter&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>ss -tlnup &quot;$filter&quot;</span></span></code></pre>
 <h2 id="timed-run-err">timed-run-err</h2>
 <p>Expect’s timed-run example script forks a command and if it does not complete in a given time, kills it.</p>
 <p>This variant of the timed-run example script exists with an error code when timeout occurs:</p>
@@ -1446,45 +1347,37 @@ Just some ramblings.
 <span class="line"><span>	timeout  {</span></span>
 <span class="line"><span>	    exit 1</span></span>
 <span class="line"><span>	}</span></span>
-<span class="line"><span>}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>}</span></span></code></pre>
 <h2 id="ctags_php">ctags_php</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>ctags -R --langmap=php:+.inc *</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>ctags -R --langmap=php:+.inc *</span></span></code></pre>
 <h2 id="minimaldesktop">Minimal.desktop</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>[Desktop Entry]</span></span>
 <span class="line"><span>Type=Application</span></span>
 <span class="line"><span>Name=ArgoUML</span></span>
 <span class="line"><span>Exec=/var/soft/argouml/argouml.sh</span></span>
-<span class="line"><span>Icon=/var/soft/argouml/icon/ArgoIcon512x512.png</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>Icon=/var/soft/argouml/icon/ArgoIcon512x512.png</span></span></code></pre>
 <h2 id="node-reformat_jsonjs">node-reformat_JSON.js</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/node</span></span>
 <span class="line"><span>var fs = require(&#39;fs&#39;);</span></span>
 <span class="line"><span>var input = fs.readFileSync(&#39;/dev/stdin&#39;).toString();</span></span>
-<span class="line"><span>console.log(JSON.stringify(JSON.parse(input), null, 2));</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>console.log(JSON.stringify(JSON.parse(input), null, 2));</span></span></code></pre>
 <h2 id="xml-starlet">XML Starlet</h2>
 <p>Extract module identifier (groupId:artifactId) from a pom.xml file using XMLStarlet (note that the maven namespace must be assigned to a prefix):</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>    xml sel -N &#39;m=http://maven.apache.org/POM/4.0.0&#39; -t -c &#39;/m:project/m:groupId/text()&#39; -c &#39;string(&quot;:&quot;)&#39; \\</span></span>
-<span class="line"><span>      -c &#39;/m:project/m:artifactId/text()&#39; pom.xml</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>      -c &#39;/m:project/m:artifactId/text()&#39; pom.xml</span></span></code></pre>
 <h2 id="screentitlesh">screentitle.sh</h2>
 <p>GNU Screen - set titles for all current and future windows of the current screen session:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>newtitle=$1</span></span>
-<span class="line"><span>screen -X eval &quot;at \\\# title $newtitle&quot; &quot;shelltitle $newtitle&quot; &quot;hardstatus string $newtitle&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>screen -X eval &quot;at \\\# title $newtitle&quot; &quot;shelltitle $newtitle&quot; &quot;hardstatus string $newtitle&quot;</span></span></code></pre>
 <h2 id="screenfitallsh">screenfitall.sh</h2>
 <p>GNU Screen - fit all windows of the current session to current terminal size (e.g. after resizes):</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>screen -X eval &quot;at \\# fit&quot;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>screen -X eval &quot;at \\# fit&quot;</span></span></code></pre>
 <p>Note that the same can be achieved interactively within a screen session by hitting:</p>
 <p><strong>CTRL-a, :</strong></p>
 <p>then typing the screen command:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>at \# fit</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>at \# fit</span></span></code></pre>
 <h2 id="randbetweensh">randbetween.sh</h2>
 <p>Generate a random integer number between two values (not less than 0 and not greater than 32767)</p>
 <p><br/>
@@ -1511,11 +1404,9 @@ Just some ramblings.
 <span class="line"><span>    break;</span></span>
 <span class="line"><span>  fi;</span></span>
 <span class="line"><span>  pid=$ppid;</span></span>
-<span class="line"><span>done;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>done;</span></span></code></pre>
 <p>Usage:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$ ps_backtrace.sh PROCESS_PID</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$ ps_backtrace.sh PROCESS_PID</span></span></code></pre>
 <p>e.g.:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$ ps_backtrace.sh $$</span></span>
 <span class="line"><span>USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND</span></span>
@@ -1524,21 +1415,17 @@ Just some ramblings.
 <span class="line"><span>olo       212111  0.0  0.0 118996   980 pts/13   S+   Jan27   0:04 screen -S www</span></span>
 <span class="line"><span>olo        14054  0.0  0.0 107868  3200 pts/13   Ss   Jan27   0:00 -bash</span></span>
 <span class="line"><span>...</span></span>
-<span class="line"><span>root           1  0.0  0.0  19280   944 ?        Ss    2014   6:44 /sbin/init</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>root           1  0.0  0.0  19280   944 ?        Ss    2014   6:44 /sbin/init</span></span></code></pre>
 <h2 id="ps_descendantssh">ps_descendants.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>pstree -p $1 | perl -ne &#39;while (/\((\d+)\)/g) { print &quot;$sep$1&quot;; $sep=&quot;,&quot; }&#39;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>pstree -p $1 | perl -ne &#39;while (/\((\d+)\)/g) { print &quot;$sep$1&quot;; $sep=&quot;,&quot; }&#39;</span></span></code></pre>
 <h2 id="ps_blocked_processessh">ps_blocked_processes.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
-<span class="line"><span>ps axr</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>ps axr</span></span></code></pre>
 <h2 id="pid_listening_on_tcp_portsh">pid_listening_on_tcp_port.sh</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/bin/sh</span></span>
 <span class="line"><span>port=$1</span></span>
-<span class="line"><span>lsof -i TCP:$port</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>lsof -i TCP:$port</span></span></code></pre>
 <h2 id="regexp_optimizerpl">regexp_optimizer.pl</h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>#!/usr/bin/perl</span></span>
 <span class="line"><span>use Regexp::Optimizer;</span></span>
@@ -1553,23 +1440,18 @@ Just some ramblings.
 <span class="line"><span>  $big_re .= $_;</span></span>
 <span class="line"><span>}</span></span>
 <span class="line"><span>print Regexp::Optimizer-&gt;new-&gt;optimize(qr/$big_re/);</span></span>
-<span class="line"><span>print &quot;\n&quot;;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>print &quot;\n&quot;;</span></span></code></pre>
 <h1 id="microsoft-windows">Microsoft Windows</h1>
 <p>PowerShell, DOS batch etc.</p>
 <h2 id="powershell">PowerShell</h2>
 <h3 id="list-certificates-and-their-fingerprints">List certificates and their fingerprints</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>gci cert:\CurrentUser\My</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>gci cert:\CurrentUser\My</span></span></code></pre>
 <p>Additionally, display their expiration dates (the <strong>NotAfter</strong> property):</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>gci -recurse cert:\CurrentUser\My | ft -wrap -Property Thumbprint,Issuer,Subject,NotAfter</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>gci -recurse cert:\CurrentUser\My | ft -wrap -Property Thumbprint,Issuer,Subject,NotAfter</span></span></code></pre>
 <h3 id="show-private-key-info-for-certificate-given-by-fingerprint">Show private key info for certificate given by fingerprint</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>(gci cert:\CurrentUser\My | ? {$_.thumbprint -like &quot;FINGERPRINT_HEX&quot;}).PrivateKey</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>(gci cert:\CurrentUser\My | ? {$_.thumbprint -like &quot;FINGERPRINT_HEX&quot;}).PrivateKey</span></span></code></pre>
 <p>CSP private key’s container info:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>(gci cert:\CurrentUser\My | ? {$_.thumbprint -like &quot;FINGERPRINT_HEX&quot;}) | ForEach-Object {$_.PrivateKey.CspKeyContainerInfo}</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>(gci cert:\CurrentUser\My | ? {$_.thumbprint -like &quot;FINGERPRINT_HEX&quot;}) | ForEach-Object {$_.PrivateKey.CspKeyContainerInfo}</span></span></code></pre>
 <p>For RSA keys, the property UniqueKeyContainerName points to file name in  <code>[System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::ApplicationData) + &quot;\Microsoft\Crypto\RSA\&quot;</code></p>
 <p>on Windows 7 this typically is <code>c:\Users\username\AppData\Roaming\Microsoft\Crypto\RSA\</code></p>
 <p>Locate the file pathname that holds the given certificate’s RSA Private Key belonging to the current user:</p>
@@ -1579,12 +1461,10 @@ Just some ramblings.
 <span class="line"><span>    &quot;\Microsoft\Crypto\RSA\&quot; + `</span></span>
 <span class="line"><span>    [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value + &quot;\&quot; + `</span></span>
 <span class="line"><span>    $_.PrivateKey.CspKeyContainerInfo.UniqueKeyContainerName `</span></span>
-<span class="line"><span>  }</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>  }</span></span></code></pre>
 <h3 id="determine-ldap-dn-for-a-given-active-directory-user">Determine LDAP DN for a given Active Directory user</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$login_ad = &#39;LOGIN_AD&#39;;</span></span>
-<span class="line"><span>$searcher = New-Object System.DirectoryServices.DirectorySearcher([ADSI]&#39;&#39;); $searcher.Filter = &quot;(&amp;(objectClass=user)(samaccountname=$login_ad))&quot;; $adfind = $searcher.FindAll(); $adfind[0].Properties.adspath</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>$searcher = New-Object System.DirectoryServices.DirectorySearcher([ADSI]&#39;&#39;); $searcher.Filter = &quot;(&amp;(objectClass=user)(samaccountname=$login_ad))&quot;; $adfind = $searcher.FindAll(); $adfind[0].Properties.adspath</span></span></code></pre>
 <h3 id="addupdate-thumbnail-photo-in-ad-for-a-given-user">Add/update thumbnail photo in AD for a given user</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$login_ad = &quot;aadamowski&quot;;</span></span>
 <span class="line"><span>$photo_path = &quot;C:\temp\foto.jpg&quot;;</span></span>
@@ -1596,44 +1476,31 @@ Just some ramblings.
 <span class="line"><span>$photo = [byte[]](Get-Content $photo_path -Encoding byte)</span></span>
 <span class="line"><span>$user.Properties[&quot;thumbnailphoto&quot;].clear()</span></span>
 <span class="line"><span>$user.Properties[&quot;thumbnailphoto&quot;].add($photo)</span></span>
-<span class="line"><span>$user.CommitChanges()</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>$user.CommitChanges()</span></span></code></pre>
 <h3 id="dump-thumbnail-photos-from-ad-to-files">Dump thumbnail photos from AD to files</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$searcher = New-Object System.DirectoryServices.DirectorySearcher([ADSI]&#39;&#39;);</span></span>
 <span class="line"><span>$searcher.Filter = &quot;(ANY LDAP FILTER)&quot;</span></span>
 <span class="line"><span>$adfind = $searcher.FindAll();</span></span>
-<span class="line"><span>foreach ($user in $adfind) { if ($user.Properties[&#39;thumbnailphoto&#39;]) { $thumbnailphoto = $user.Properties[&#39;thumbnailphoto&#39;].Item(0); $uid = $user.Properties[&#39;samaccountname&#39;]; [System.IO.File]::WriteAllBytes(&quot;C:\temp\photos\$uid.jpg&quot;, $thumbnailphoto); } }</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>foreach ($user in $adfind) { if ($user.Properties[&#39;thumbnailphoto&#39;]) { $thumbnailphoto = $user.Properties[&#39;thumbnailphoto&#39;].Item(0); $uid = $user.Properties[&#39;samaccountname&#39;]; [System.IO.File]::WriteAllBytes(&quot;C:\temp\photos\$uid.jpg&quot;, $thumbnailphoto); } }</span></span></code></pre>
 <h3 id="convert-a-file--active-directory-timestamp-to-datetime">Convert a file / Active Directory timestamp to Date/Time:</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$timestamp=129699324000000000</span></span>
-<span class="line"><span>[System.DateTime]::FromFileTime($timestamp)</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>[System.DateTime]::FromFileTime($timestamp)</span></span></code></pre>
 <h3 id="override-locale-for-given-command">Override locale for given command:</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>[threading.thread]::currentThread.currentCulture = &#39;en-US&#39;; [System.DateTime]::FromFileTime($timestamp)</span></span>
-<span class="line"><span></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>[threading.thread]::currentThread.currentCulture = &#39;en-US&#39;; [System.DateTime]::FromFileTime($timestamp)</span></span></code></pre>
 <p>Doing it within a single line is crucial!</p>
 <h3 id="list-an-ad-groups-members">List an AD group’s members</h3>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$groupName = &#39;GROUP_NAME&#39;</span></span>
 <span class="line"><span>$searcher = New-Object System.DirectoryServices.DirectorySearcher([ADSI]&#39;&#39;);</span></span>
 <span class="line"><span>$searcher.Filter = &quot;(&amp;(objectclass=group)(cn=$groupName))&quot;</span></span>
 <span class="line"><span>$adfind = $searcher.FindAll();</span></span>
-<span class="line"><span>foreach ($group in $adfind) {&quot;============&quot;; $group.Properties[&#39;cn&#39;]; &quot;------------&quot;; $group.Properties[&#39;member&#39;]}</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>foreach ($group in $adfind) {&quot;============&quot;; $group.Properties[&#39;cn&#39;]; &quot;------------&quot;; $group.Properties[&#39;member&#39;]}</span></span></code></pre>
 <h3 id="find-an-ad-user-by-his-mobile-number">Find an AD user by his mobile number</h3>
 <p><strong>WARNING: slow and taxing for the AD server (due to complex, wildcarded search filter’s pattern)!</strong></p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>$mobileNumberSearchPattern=*666*777*888*</span></span>
 <span class="line"><span>$searcher = New-Object System.DirectoryServices.DirectorySearcher([ADSI]&#39;&#39;);</span></span>
 <span class="line"><span>$searcher.Filter = &quot;(mobile=$mobileNumberSearchPattern)&quot;;</span></span>
 <span class="line"><span>$adfind = $searcher.FindAll();</span></span>
-<span class="line"><span>$adfind[0].Properties;</span></span>
-<span class="line"><span></span></span></code></pre>
+<span class="line"><span>$adfind[0].Properties;</span></span></code></pre>
 <h1 id="javascript">JavaScript</h1>
 <h2 id="speed-up-all-videos-on-page">Speed up all videos on page</h2>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>[...document.querySelectorAll(&#39;video&#39;)].forEach(v =&gt; v.playbackRate = 1.5)</span></span>
-<span class="line"><span></span></span></code></pre> </article>  </main> <footer class="site-footer"> <p> <a href="https://github.com/aadamowski" target="_blank" rel="noopener">GitHub</a>
-&middot;
-<a href="https://www.linkedin.com/in/aleksanderadamowski/" target="_blank" rel="noopener">LinkedIn</a>
-&middot;
-<a href="https://www.facebook.com/olo" target="_blank" rel="noopener">Facebook</a>
-&middot;
-<a href="https://www.instagram.com/aadamowski/" target="_blank" rel="noopener">Instagram</a> </p> </footer> </body></html>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span>[...document.querySelectorAll(&#39;video&#39;)].forEach(v =&gt; v.playbackRate = 1.5)</span></span></code></pre></article></main><footer class="site-footer" data-astro-cid-z4jru4n3><p data-astro-cid-z4jru4n3><a href="https://github.com/aadamowski" target="_blank" rel="noopener" data-astro-cid-z4jru4n3>GitHub</a>&middot;<a href="https://www.linkedin.com/in/aleksanderadamowski/" target="_blank" rel="noopener" data-astro-cid-z4jru4n3>LinkedIn</a>&middot;<a href="https://www.facebook.com/olo" target="_blank" rel="noopener" data-astro-cid-z4jru4n3>Facebook</a>&middot;<a href="https://www.instagram.com/aadamowski/" target="_blank" rel="noopener" data-astro-cid-z4jru4n3>Instagram</a></p></footer></body></html>
